@@ -6,6 +6,7 @@ get '/' do
 end
 
 get '/contacts' do
+  @all_contacts = Contact.all
   erb(:contacts)
 end
 
