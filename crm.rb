@@ -18,6 +18,11 @@ get '/about' do
   erb(:about)
 end
 
+get '/contacts/:id' do
+
+  erb :show_contact
+end
+
 # Keep this line at the bottom
 after do
   ActiveRecord::Base.connection.close
