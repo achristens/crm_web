@@ -1,10 +1,10 @@
 /* Site-Wide Styles */
 
-*{
+* {
   font-family: Circular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-header h1{
+header h1 {
   background: rgb(34, 34, 34);
   color: #FFFFFF;
   text-align: center;
@@ -27,13 +27,13 @@ header h1{
   font-weight: 700;
 }
 
-.header-nav li{
+.header-nav li {
   background: #d3d3d3;
   margin: 2px 0;
   padding: 5px 0;
 }
 
-footer{
+footer {
   background: black;
   color: white;
   text-align: center;
@@ -41,29 +41,39 @@ footer{
   font-size: 12px;
 }
 
+
 /* Contact List Homepage*/
-.contact-count{
+
+main {
+  padding: 0 20px;
+}
+
+.contact-count {
   background: #FD8171;
   padding: 1px 15px;
   font-size: 20px;
   margin-top: 16px;
 }
 
-.count-number{
+.count-number {
   font-weight: 700;
   text-decoration: underline;
   text-decoration-color: #2AE0D0;
 }
 
-.main-contact-list{
+.main-contact-list {
   list-style: none;
   padding: 0;
 }
 
-.main-contact-list h2{
+.main-contact-list h2 {
   margin: 0px;
 }
-.main-contact-list li{
+
+.edit-delete{
+  margin-top: 5px;
+}
+.main-contact-list li {
   background: #2AE0D0;
   margin: 15px 0;
   padding: 20px 25px;
