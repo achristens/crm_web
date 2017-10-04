@@ -78,3 +78,36 @@ main {
   margin: 15px 0;
   padding: 20px 25px;
 }
+
+
+/* Single Contact Page */
+.contact-box{
+  margin: 16px 0px;
+}
+.contact-info span, .notes span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contact-info, .notes {
+  display: inline-block;
+  width: 47%;
+  padding-left: 20px;
+  height: 150px;
+}
+
+.contact-info{
+  background: #2AE0D0;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.notes{
+  background: #2AE0D0;
+}
+
+.notes-inner{
+  background: white;
+  padding: 1px 0px 20px 12px;
+  margin: 12px 20px 20px 0;
+}

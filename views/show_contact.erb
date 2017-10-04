@@ -1,1 +1,13 @@
-<h1>View A Contact</h1>
+<div class="contact-box">  
+  <div class="contact-info">
+    <p><span>NAME:</span> <%= @contact.full_name %></p>
+    <p><span>EMAIL:</span> <%= @contact.email %></p>
+  </div>
+
+  <div class="notes">
+    <p><span>NOTES:</span></p>
+    <div class="notes-inner">
+      <p><%= @contact.note %></p>
+    </div>
+  </div>
+</div>
