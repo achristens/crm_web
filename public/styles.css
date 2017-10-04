@@ -99,11 +99,12 @@ main {
 .contact-info{
   background: #2AE0D0;
   vertical-align: top;
-  margin-right: 16px;
+  margin-right: 14px;
 }
 
 .notes{
   background: #2AE0D0;
+  margin-left: 15px;
 }
 
 .notes-inner{
