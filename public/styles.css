@@ -1,3 +1,5 @@
+/* Site-Wide Styles */
+
 *{
   font-family: Circular, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
@@ -29,4 +31,40 @@ header h1{
   background: #d3d3d3;
   margin: 2px 0;
   padding: 5px 0;
+}
+
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* Contact List Homepage*/
+.contact-count{
+  background: #FD8171;
+  padding: 1px 15px;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.count-number{
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #2AE0D0;
+}
+
+.main-contact-list{
+  list-style: none;
+  padding: 0;
+}
+
+.main-contact-list h2{
+  margin: 0px;
+}
+.main-contact-list li{
+  background: #2AE0D0;
+  margin: 15px 0;
+  padding: 20px 25px;
 }
