@@ -10,7 +10,7 @@ get '/contacts' do
   erb(:contacts)
 end
 
-get '/new' do
+get '/contacts/new' do
   erb :new
 end
 
@@ -26,6 +26,16 @@ get '/contacts/:id' do
   else
     raise Sinatra::NotFound
   end
+end
+
+post '/contacts' do
+  Contact.create(
+    first_name: params[:first_name],
+    last_name:  params[:last_name],
+    email:      params[:email],
+    note:       params[:note]
+  )
+  redirect to('/contacts')
 end
 
 # Keep this line at the bottom
