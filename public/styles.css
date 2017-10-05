@@ -79,6 +79,9 @@ main {
   padding: 20px 25px;
 }
 
+a.contact-link {
+  text-decoration: none;
+}
 
 /* Single Contact Page */
 .contact-box{
