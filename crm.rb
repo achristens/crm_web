@@ -10,8 +10,8 @@ get '/contacts' do
   erb(:contacts)
 end
 
-get '/add' do
-  erb :add
+get '/new' do
+  erb :new
 end
 
 get '/about' do
@@ -25,7 +25,7 @@ get '/contacts/:id' do
     erb :show_contact
   else
     raise Sinatra::NotFound
-  end  
+  end
 end
 
 # Keep this line at the bottom
