@@ -1,12 +1,17 @@
 <h1>Edit a Contact</h1>
 
-<form action='/contacts/<%= @contact.id %>' method='post'>
+<form action='/contacts/<%= @contact.id %>' method='post' class="edit-form">
   <input type='hidden' name='_method' value='put'>
-  <input type='text' name='first_name' value='<%= @contact.first_name %>'>
-  <input type='text' name='last_name' value='<%= @contact.last_name %>'>
-  <input type='text' name='email' value='<%= @contact.email %>'>
-  <input type='text' name='note' value='<%= @contact.note %>'>
+  <div class="form-1">
+    <input type='text' name='first_name' value='<%= @contact.first_name %>'>
+    <input type='text' name='last_name' value='<%= @contact.last_name %>'>
+    <input type='text' name='email' value='<%= @contact.email %>'>
+  </div>
+  <div class="form-2">
+    <textarea type='text' name='note' rows="4" cols="63"><%= @contact.note %></textarea>
+    <!-- <input type='text' name='note' value='<%= @contact.note %>'> -->
+  </div>
   <input type='submit' value='Edit Contact'>
 </form>
 
-<div><a href="/contacts/<%= params[:id] %>"><p>Back to Contact Page</p></a></div>
+<p><a href="/contacts/<%= params[:id] %>" class="back-to-contact">Back to Contact Page</a></p>

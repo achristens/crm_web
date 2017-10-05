@@ -1,9 +1,14 @@
 <h1>Create New Contact</h1>
 
-<form action='/contacts' method='post'>
-  <input type='text' name='first_name'>
-  <input type='text' name='last_name'>
-  <input type='text' name='email'>
-  <input type='text' name='note'>
-  <input type='submit' value='New Contact'>
+<form action='/contacts' method='post' class="new-form">
+  <div class="form-1">
+    <input type='text' name='first_name' placeholder="First Name">
+    <input type='text' name='last_name' placeholder="Last Name">
+    <input type='text' name='email' placeholder="Email Address">
+  </div>
+  <div class="form-2">
+    <textarea type='text' name='note' rows="4" cols="63" placeholder="Notes"></textarea>
+    <!-- <input type='text' name='note'> -->
+  </div>
+  <input type='submit' value='Add Contact'>
 </form>

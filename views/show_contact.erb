@@ -2,7 +2,7 @@
   <div class="contact-info">
     <p><span>NAME:</span> <%= @contact.full_name %></p>
     <p><span>EMAIL:</span> <%= @contact.email %></p>
-    <a href="/contacts/<%= params[:id] %>/edit"><p>Edit</p></a>
+    <a href="/contacts/<%= params[:id] %>/edit" class="contact-edit"><p>Edit</p></a>
     <form action='/contacts/<%= @contact.id %>' method='post'>
       <input type='hidden' name='_method' value='delete'>
       <input type='submit' value='Delete Contact'>
