@@ -1,0 +1,11 @@
+<div class="contact-count">
+  <p>There are <span class="count-number"><%= @contacts.count %></span> contacts that match that search</p>
+</div>
+<ul class="main-contact-list">
+  <% @contacts.each do |contact| %>
+  <li>
+    <a href="/contacts/<%= contact.id %>" class="contact-link"><h2><%= contact.full_name %> (<%= contact.email %>)</h2></a>
+    <div class="edit-delete"><a href="/contacts/<%= contact.id %>/edit">Edit</a>
+  </li>
+  <% end %>
+</ul>

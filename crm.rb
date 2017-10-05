@@ -1,5 +1,6 @@
 require_relative 'contact'
 require 'sinatra'
+require 'pry'
 
 get '/' do
   redirect to('/contacts')
@@ -73,7 +74,30 @@ delete '/contacts/:id' do
   end
 end
 
+get '/search' do
+  erb :search
+end
+
+get '/search_results' do
+
+  # name = params.values.first
+  if params["search"]
+    if [] != @contacts = Contact.where(first_name: params["search"])
+      erb :search_results
+    else @contacts = Contact.where(last_name: params["search"])
+      erb :search_results
+    end
+  else
+    erb :contacts
+  end
+end
+
 # Keep this line at the bottom
 after do
   ActiveRecord::Base.connection.close
 end
+
+
+# When you've searched for something the word "search becomes tehkey to a hash and the thing you searched becomes the value"
+# name = params.values.first
+# @contacts = Contact.where(first_name: name)
